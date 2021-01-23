@@ -7,11 +7,15 @@ import {
   BrowserRouter,
   Route,
 } from 'react-router-dom';
+import Home from './components/HomePage/Home'
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Route exact path="/">
+      <Route exact path='/'>
+        <Home />
+      </Route>
+      <Route path='/app'>
         <App />
       </Route>
     </BrowserRouter>
