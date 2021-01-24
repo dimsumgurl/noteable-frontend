@@ -7,7 +7,7 @@ import {
   BrowserRouter,
   Route,
 } from 'react-router-dom';
-import Home from './components/HomePage/Home'
+import Home from './components/HomePage/Home';
 
 ReactDOM.render(
   <React.StrictMode>
