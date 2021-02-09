@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -8,12 +9,16 @@ import {
   Route,
 } from 'react-router-dom';
 import Home from './components/HomePage/Home';
+import Login from './components/LoginPage/Login';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Route exact path='/'>
         <Home />
+      </Route>
+      <Route path='/login'>
+        <Login />
       </Route>
       <Route path='/app'>
         <App />
